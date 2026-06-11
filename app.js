@@ -359,4 +359,28 @@ loadTrack = function(index) {
     saveCurrentTrackIndex();
 };
 
-console.log('🚀 DJ WONDABEATZ site is PEAK! Audio player ready.');
+// ========== CUSTOM CURSOR TRACKER ==========
+const cursorTracker = document.createElement('div');
+cursorTracker.className = 'cursor-tracker';
+document.body.appendChild(cursorTracker);
+
+let mouseX = 0, mouseY = 0;
+let trackerX = 0, trackerY = 0;
+
+window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+});
+
+function animateTracker() {
+    const dx = mouseX - trackerX;
+    const dy = mouseY - trackerY;
+    trackerX += dx * 0.2;
+    trackerY += dy * 0.2;
+    cursorTracker.style.left = (trackerX - 16) + 'px';
+    cursorTracker.style.top = (trackerY - 16) + 'px';
+    requestAnimationFrame(animateTracker);
+}
+animateTracker();
+
+console.log('🚀 DJ WONDABEATZ site is PEAK! Custom cursor & scrollbar glow ready.');
