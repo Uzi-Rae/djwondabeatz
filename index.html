@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>DJ WONDABEATZ | Professional DJ in Ghana</title>
+    <meta name="description" content="Professional DJ WONDABEATZ - Ghana's premier DJ for clubs, weddings, gospel events & parties.">
+    <meta name="theme-color" content="#050816">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="canonical" href="https://djwondabeatz.com/">
+    <meta property="og:title" content="DJ WONDABEATZ | Professional DJ in Ghana">
+    <meta property="og:description" content="Professional DJ WONDABEATZ - Ghana's premier DJ for clubs, weddings, gospel events & parties.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://djwondabeatz.com/">
+    <meta property="og:image" content="https://djwondabeatz.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@djwondabeatz">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Primary navigation">
+    <div class="nav-container">
+        <div class="logo">DJ WONDABEATZ</div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#vibes">Vibes</a>
+            <a href="#mixes">Mixes</a>
+            <a href="#contact">Bookings</a>
+            <a href="#contact" class="btn-book">Book Now</a>
+        </div>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+    <div class="container hero-grid">
+        <div>
+            <h1 class="hero-title">DJ WONDABEATZ</h1>
+            <div class="hero-tagline"><i class="fas fa-headphones"></i> Professional DJ & Music Curator</div>
+            <div class="hero-tagline"><i class="fas fa-music"></i> Afrobeats • Amapiano • Gospel • Party Anthems</div>
+            <div class="hero-tagline"><i class="fas fa-map-marker-alt"></i> Ghana | 0245432870</div>
+            <div class="hero-tagline"><i class="fas fa-envelope"></i> djwondabeatz@gmail.com</div>
+            <div class="hero-actions">
+                <a href="#mixes" class="btn btn-primary"><i class="fas fa-play"></i> Latest Mix</a>
+                <a href="#contact" class="btn btn-secondary"><i class="fas fa-calendar-alt"></i> Book Now</a>
+            </div>
+        </div>
+        <div><canvas id="hero-canvas"></canvas></div>
+    </div>
+</section>
+
+<!-- Floating Audio Player - FULLY FUNCTIONAL -->
+<div class="audio-float" id="audioFloat" role="region" aria-label="Audio player" tabindex="0">
+    <div class="track-icon"><i class="fas fa-music"></i></div>
+    <div class="track-info">
+        <h4 id="trackTitle" aria-live="polite">Joey B - Suzzy Williams</h4>
+        <p>Now Playing</p>
+    </div>
+    <div class="player-controls">
+        <button class="player-btn" id="prevBtn" aria-label="Previous track"><i class="fas fa-step-backward"></i></button>
+        <button class="player-btn" id="playPauseBtn" aria-label="Play" aria-pressed="false"><i class="fas fa-play"></i></button>
+        <button class="player-btn" id="nextBtn" aria-label="Next track"><i class="fas fa-step-forward"></i></button>
+    </div>
+    <div class="progress-wrap">
+        <input type="range" id="seekSlider" class="progress-slider" min="0" max="100" step="0.1" value="0" aria-label="Track progress">
+        <div class="progress-text"><span id="currentTime">0:00</span><span id="durationTime">0:00</span></div>
+    </div>
+    <div class="volume">
+        <i class="fas fa-volume-up"></i>
+        <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.01" value="0.7" aria-label="Volume control">
+    </div>
+</div>
+
+<!-- About -->
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About DJ WONDABEATZ</h2>
+        <p class="section-subtitle">Ghana's premier DJ since 2015</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+            <div class="card" style="text-align: center;">
+                <i class="fas fa-headphones" style="font-size: 4rem; color: var(--primary);"></i>
+                <p style="margin-top: 1rem;">Over 500+ events, from intimate gatherings to massive festivals.</p>
+            </div>
+            <div>
+                <p>Born and raised in Ghana, DJ WONDABEATZ crafts unforgettable musical experiences blending Afrobeats, Amapiano, Gospel, and global hits. His energy and seamless transitions make every event legendary.</p>
+                <div style="display: flex; gap: 2rem; margin-top: 2rem;">
+                    <div><h3>500+</h3><p>Events</p></div>
+                    <div><h3>100%</h3><p>Vibe Guarantee</p></div>
+                    <div><h3>4+</h3><p>Genres</p></div>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+                    <span class="location-chip">Accra</span>
+                    <span class="location-chip">Takoradi</span>
+                    <span class="location-chip">Kumasi</span>
+                    <span class="location-chip">Cape Coast</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+    <div class="container">
+        <h2 class="section-title">Professional Services</h2>
+        <p class="section-subtitle">Every event, perfectly mixed.</p>
+        <div class="services-grid">
+            <div class="card"><i class="fas fa-glass-cheers card-icon"></i><h3>Clubs & Nightlife</h3><p>High-energy sets that keep the dance floor packed.</p></div>
+            <div class="card"><i class="fas fa-heart card-icon"></i><h3>Weddings</h3><p>Romantic to epic – your perfect soundtrack.</p></div>
+            <div class="card"><i class="fas fa-church card-icon"></i><h3>Gospel Events</h3><p>Uplifting worship and praise sets.</p></div>
+            <div class="card"><i class="fas fa-birthday-cake card-icon"></i><h3>Private Parties</h3><p>Customized vibes for any celebration.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- Vibes -->
+<section id="vibes">
+    <div class="container">
+        <h2 class="section-title">The WONDABEATZ Vibe</h2>
+        <div class="vibes-grid">
+            <div class="card"><i class="fas fa-fire card-icon"></i><h3>Hype Energy</h3><p>Non-stop party anthems</p></div>
+            <div class="card"><i class="fas fa-gem card-icon"></i><h3>Elegant</h3><p>Sophisticated wedding vibes</p></div>
+            <div class="card"><i class="fas fa-hands-praying card-icon"></i><h3>Spiritual</h3><p>Gospel worship sessions</p></div>
+            <div class="card"><i class="fas fa-umbrella-beach card-icon"></i><h3>Chill Lounge</h3><p>Smooth background vibes</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- Mixes -->
+<section id="mixes">
+    <div class="container">
+        <h2 class="section-title">Latest Mixes</h2>
+        <div class="mixes-grid">
+            <div class="card"><i class="fas fa-headphones card-icon"></i><h3>Detty Decembers Vol.1</h3><button class="btn btn-primary mix-btn" data-mix="https://audiomack.com/djwondabeatz/song/dj-wonda-beatz-detty-decembers-vol1">Play on Audiomack</button></div>
+            <div class="card"><i class="fas fa-music card-icon"></i><h3>More Mixes</h3><button class="btn btn-primary mix-btn" data-mix="https://audiomack.com/djwondabeatz">Audiomack Profile</button></div>
+            <div class="card"><i class="fab fa-youtube card-icon"></i><h3>YouTube Live</h3><button class="btn btn-primary mix-btn" data-mix="https://youtube.com/@djwondabeatz2852">Watch on YouTube</button></div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section>
+    <div class="container">
+        <h2 class="section-title">What Clients Say</h2>
+        <div class="swiper testimonial-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><div class="testimonial-card"><p class="testimonial-quote">“Made our wedding unforgettable!”</p><h4>Ama K.</h4><p>Accra, Ghana</p></div></div>
+                <div class="swiper-slide"><div class="testimonial-card"><p class="testimonial-quote">“Incredible gospel atmosphere!”</p><h4>Pastor Emmanuel</h4><p>Kumasi, Ghana</p></div></div>
+                <div class="swiper-slide"><div class="testimonial-card"><p class="testimonial-quote">“Best club night ever!”</p><h4>Kofi A.</h4><p>Tema, Ghana</p></div></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact / Bookings -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Bookings & Contact</h2>
+        <div class="contact-grid">
+            <div>
+                <div class="contact-item"><div class="contact-icon"><i class="fab fa-whatsapp"></i></div><div><strong>WhatsApp</strong><br><a href="https://wa.me/233245432870" style="color: var(--primary);">0245432870</a></div></div>
+                <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><strong>Email</strong><br><a href="mailto:djwondabeatz@gmail.com">djwondabeatz@gmail.com</a></div></div>
+                <div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div><strong>Based in</strong><br>Ghana (Nationwide)</div></div>
+                <div class="contact-item"><div class="contact-icon"><i class="fas fa-globe-africa"></i></div><div><strong>Availability</strong><br>Local & International</div></div>
+            </div>
+            <div>
+                <form id="bookingForm" action="https://formsubmit.co/djwondabeatz@gmail.com" method="POST">
+                    <div class="form-group"><input type="text" name="name" placeholder="Your Name" required></div>
+                    <div class="form-group"><input type="email" name="email" placeholder="Email Address" required></div>
+                    <div class="form-group"><input type="tel" name="phone" placeholder="Phone Number" required></div>
+                    <div class="form-group"><select name="event-type" required><option value="">Event Type</option><option>Club</option><option>Wedding</option><option>Gospel</option><option>Private Party</option></select></div>
+                    <div class="form-group"><input type="date" name="event-date" required></div>
+                    <div class="form-group"><textarea name="message" rows="4" placeholder="Tell us about your event..."></textarea></div>
+                    <button type="submit" class="btn btn-primary">Send Request <i class="fas fa-paper-plane"></i></button>
+                </form>
+                <div id="formSuccess" style="display:none; margin-top:1rem; padding:1rem; background:rgba(34,211,238,0.1); border-radius:12px;">✅ Request sent! We'll reply within 24h.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="logo" style="margin-bottom: 1rem;">DJ WONDABEATZ</div>
+        <p style="color: var(--text-muted);">© 2026 DJ WONDABEATZ. All rights reserved.</p>
+        <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+            <a href="https://www.instagram.com/dj_wonda_beatz" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@djwondabeatz" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+            <a href="https://audiomack.com/djwondabeatz" target="_blank" rel="noopener"><i class="fas fa-music"></i></a>
+            <a href="https://youtube.com/@djwondabeatz2852" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+
+<div class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/app.js" defer></script>
+</body>
+</html>
