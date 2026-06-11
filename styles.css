@@ -183,10 +183,20 @@ h1, h2, h3, h4, .logo, .btn { font-family: var(--font-heading); }
     border-color: var(--primary);
 }
 .card-icon {
-    font-size: 3rem;
-    color: var(--primary);
+    width: 120px;
+    height: 120px;
     margin-bottom: 1rem;
     display: block;
+    object-fit: contain;
+}
+
+/* Font Awesome icons in cards */
+i.card-icon {
+    width: auto;
+    height: auto;
+    font-size: 4rem;
+    color: var(--primary);
+    object-fit: auto;
 }
 .card h3 { font-size: 1.4rem; margin-bottom: 1rem; }
 .card p { color: var(--text-muted); }
