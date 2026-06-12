@@ -1,0 +1,8 @@
+{
+  "name": "DJ WONDABEATZ",
+  "short_name": "WONDABEATZ",
+  "start_url": "/pages/index.html",
+  "display": "standalone",
+  "background_color": "#050816",
+  "theme_color": "#FF5C00"
+}
